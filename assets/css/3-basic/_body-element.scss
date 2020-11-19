@@ -58,7 +58,7 @@ textarea {
 
 body {
     font-size: 16px;
-    font-size: $font-regular;
+    font-family: $font-regular;
     overflow-x: hidden;
 }
 
@@ -205,6 +205,7 @@ h1, h2, h3, h4, h5, h6{
     font-weight: bold;
     display: flex;
     justify-content: flex-start;
+    font-family: 'Lato';
     icon{
         width: 20px;
         height: 20px;
@@ -261,10 +262,10 @@ small{
 // Basic Text Style
 
 p{
-    opacity: 0.8;
     margin: 0 0 20px 0;
     line-height: 1.9;
     font-weight: 500;
+    color: #838383;
 }
 
 em{
