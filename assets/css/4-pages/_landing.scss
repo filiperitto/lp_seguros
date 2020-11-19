@@ -198,7 +198,7 @@
         .socials{
             padding: 25px 0;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             a{
                 margin-right: 20px;
                 &:last-child{
@@ -1470,7 +1470,7 @@ footer{
                 font-family: 'DM Sans';
                 font-weight: 400;
                 font-size: 15px;
-                margin: 8px 0;
+                margin: 8px 0; 
                 
             }
         }
