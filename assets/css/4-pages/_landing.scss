@@ -1328,69 +1328,74 @@ section {
         width: 100%;
         max-width: 970px;
         margin: auto;
-        .acc-heading{
+        .item{
             align-items: center;
             background: #EAEAEA;
             //box-shadow: 0px 0px 10px rgba(0, 109, 174, 0.1);
             margin-bottom: 30px;
             padding: 40px;
+            border-bottom: 0;
+        }
+        .acc-heading{
             border: none;
             display: block;
             transition: all .2s ease-in-out;
             cursor: default;
-            .header-acc{
-                font-family: Raleway;
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 34px;
-                letter-spacing: 0.5px;
-                text-align: left;
-                color: #222;
-                font-family: Lato;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 34px;
-                /* identical to box height, or 142% */
+            font-family: Raleway;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 34px;
+            letter-spacing: 0.5px;
+            text-align: left;
+            color: #222;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 34px;
+            padding: 0;
+            /* identical to box height, or 142% */
 
-                letter-spacing: 0.5px;
-                display: flex;
-                justify-content: space-between;
-                cursor: pointer;
+            letter-spacing: 0.5px;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            .header-acc{
             }
             svg{
                 transition: all .2s ease-in-out;
                 flex-shrink: 0;
             }
             &.active{
-                box-shadow: 0px 15px 60px rgba(0, 109, 174, 0.1);
-                margin-bottom: 35px;
+                //box-shadow: 0px 15px 60px rgba(0, 109, 174, 0.1);
+                //margin-bottom: 35px;
+                color: #222;
                 svg{
                     transform: rotate(180deg);
                 }
             }
-            .acc-content{
-                .inner{
-                    padding: 0;
-                    p{
-                        margin: 20px 0;
-                        color: #606060;
-                        cursor: auto;
-                        font-family: Lato;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 18px;
-                        line-height: 26px;
-                        /* identical to box height, or 144% */
 
-                        letter-spacing: 0.2px;
+        }
+        .acc-content{
+            .inner{
+                padding: 0;
+                p{
+                    margin: 20px 0;
+                    color: #606060;
+                    cursor: auto;
+                    font-family: Lato;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 26px;
+                    /* identical to box height, or 144% */
 
-                        color: #383838;
-                    }
+                    letter-spacing: 0.2px;
+
+                    color: #383838;
                 }
             }
-
         }
     }
     .btn-box{
@@ -1458,12 +1463,14 @@ footer{
                 text-transform: uppercase;
                 letter-spacing: 3px;
                 color: #fff;
+                margin: 8px 0;
             }
             p{
                 color: #fff;
                 font-family: 'DM Sans';
                 font-weight: 400;
                 font-size: 15px;
+                margin: 8px 0;
                 
             }
         }

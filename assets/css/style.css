@@ -3575,21 +3575,22 @@ section .subtitle {
   margin: auto;
 }
 
-.moduleFaq-1 .accordion .acc-heading {
+.moduleFaq-1 .accordion .item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background: #EAEAEA;
   margin-bottom: 30px;
   padding: 40px;
+  border-bottom: 0;
+}
+
+.moduleFaq-1 .accordion .acc-heading {
   border: none;
   display: block;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   cursor: default;
-}
-
-.moduleFaq-1 .accordion .acc-heading .header-acc {
   font-family: Raleway;
   font-size: 24px;
   font-style: normal;
@@ -3603,6 +3604,7 @@ section .subtitle {
   font-weight: bold;
   font-size: 24px;
   line-height: 34px;
+  padding: 0;
   /* identical to box height, or 142% */
   letter-spacing: 0.5px;
   display: -webkit-box;
@@ -3622,9 +3624,7 @@ section .subtitle {
 }
 
 .moduleFaq-1 .accordion .acc-heading.active {
-  -webkit-box-shadow: 0px 15px 60px rgba(0, 109, 174, 0.1);
-          box-shadow: 0px 15px 60px rgba(0, 109, 174, 0.1);
-  margin-bottom: 35px;
+  color: #222;
 }
 
 .moduleFaq-1 .accordion .acc-heading.active svg {
@@ -3632,11 +3632,11 @@ section .subtitle {
           transform: rotate(180deg);
 }
 
-.moduleFaq-1 .accordion .acc-heading .acc-content .inner {
+.moduleFaq-1 .accordion .acc-content .inner {
   padding: 0;
 }
 
-.moduleFaq-1 .accordion .acc-heading .acc-content .inner p {
+.moduleFaq-1 .accordion .acc-content .inner p {
   margin: 20px 0;
   color: #606060;
   cursor: auto;
@@ -3736,6 +3736,7 @@ footer .footer-container .text-box h5 {
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #fff;
+  margin: 8px 0;
 }
 
 footer .footer-container .text-box p {
@@ -3743,6 +3744,7 @@ footer .footer-container .text-box p {
   font-family: 'DM Sans';
   font-weight: 400;
   font-size: 15px;
+  margin: 8px 0;
 }
 
 footer .footer-container .form-box {
